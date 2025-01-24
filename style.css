@@ -78,12 +78,23 @@ header .logo {
 }
 
 .menu .card .card-text {
-    font-size: 1.0em;
+    font-size: 1.00em;
     color: var(--secondary-gray);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .menu .card .card-text .price {
     color: var(--primary-black);
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 575px) {
+    .menu .card .card-title {
+        font-size: 1.00em;
+    }
+    
+    .menu .card .card-text {
+        font-size: 0.75em;
+    }
 }
