@@ -1,7 +1,16 @@
+/* Variables */
 :root {
+
+    /* Colors */
     --primary-orange: #e77224;
     --primary-black: #000000;
     --secondary-gray: #828282;
+
+
+    /* Fonts */
+    --ff-body: Verdana, Geneva, Tahoma, sans-serif;
+    --ff-display: Georgia, 'Times New Roman', Times, serif;
+    --ff-numeral: 'Times New Roman', Times, serif;
 }
 
 .visually-hidden {
@@ -11,7 +20,19 @@
 body {
     color: var(--primary-black);
     font-size: 16px;
+    font-family: var(--ff-body);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-display);
+}
+
+/* Logo Header */
 
 header {
     width: 100%;
@@ -21,6 +42,8 @@ header .logo {
     margin: 0 auto;
     padding: 10px 20px;
 }
+
+/* Subheader */
 
 .subheading {
     margin: 32px auto;
@@ -47,6 +70,8 @@ header .logo {
     font-size: 32px;
     font-weight: 500;
 }
+
+/* Menu */
 
 .menu {
     display: flex;
@@ -80,20 +105,25 @@ header .logo {
 .menu .card .card-text {
     font-size: 1.00em;
     color: var(--secondary-gray);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .menu .card .card-text .price {
     color: var(--primary-black);
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--ff-numeral);
 }
+
+.menu .card .btn {
+    box-shadow: 3px 3px 5px #EEEEEE;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 575px) {
     .menu .card .card-title {
         font-size: 1.00em;
     }
-    
+
     .menu .card .card-text {
         font-size: 0.75em;
     }
